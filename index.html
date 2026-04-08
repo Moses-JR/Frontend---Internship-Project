@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Store Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo-container">
+        <img src="D:\Intern Project\Vibrant play button logo design.png" alt="App Logo" class="logo">
+        <h1>AppStore</h1>
+    </div>
+    <input type="text" id="searchBar" placeholder="Search apps...">
+</header>
+<!-- Category Buttons -->
+<div class="categories">
+    <button onclick="filterCategory('All')">All</button>
+    <button onclick="filterCategory('Games')">Games</button>
+    <button onclick="filterCategory('Social')">Social</button>
+    <button onclick="filterCategory('Productivity')">Productivity</button>
+    <button onclick="filterCategory('Entertainment')">Entertainment</button>
+</div>
+
+<div class="container" id="appContainer"></div>
+
+<!-- App Detail Modal -->
+<div id="appModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg">
+        <h2 id="modalName"></h2>
+        <p id="modalCategory"></p>
+        <p id="modalRating"></p>
+        <p id="modalDesc"></p>
+        <button id="modalBtn">Install</button>
+    </div>
+</div>
+
+<div id="appModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg">
+        <h2 id="modalName"></h2>
+        <p id="modalCategory"></p>
+        <p id="modalRating"></p>
+        <p id="modalDesc"></p>
+
+        <button id="modalBtn">Install</button>
+
+        <!-- Progress Bar -->
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p id="progressText"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
